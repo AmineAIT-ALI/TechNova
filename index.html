@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechNova - Innovation et Technologie pour un Monde Meilleur. Découvrez nos services, notre équipe, et comment nous transformons vos idées en solutions concrètes.">
+    <title>Accueil - TechNova</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logomini.jpg" type="image/x-icon">
+    <style>
+        /* Bouton pour le chatbot */
+        #help-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #0066cc;
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            padding: 15px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+        #help-button:hover {
+            background-color: #004c99;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="images/logomini.jpg" alt="Logo TechNova" class="logo-image">
+            <div class="logo-text">
+                <h1>TechNova</h1>
+                <p>Innovation et Technologie pour un Monde Meilleur</p>
+            </div>
+        </div>
+        <nav aria-label="Menu principal">
+            <ul>
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="services.html">Nos Services</a></li>
+                <li><a href="team.html">Notre Équipe</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="images/logo.jpg" alt="Logo Principal de TechNova" class="hero-logo">
+        <h2>Bienvenue chez TechNova</h2>
+        <p>Nous repoussons les limites de l'innovation pour construire un avenir meilleur.</p>
+        <a href="about.html" class="btn-primary">En savoir plus</a>
+    </section>
+
+    <!-- Services Preview Section -->
+    <section class="services-preview">
+        <h2>Nos Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Développement de Systèmes</h3>
+                <p>Créez des solutions sur mesure pour vos besoins technologiques.</p>
+            </div>
+            <div class="card">
+                <h3>Support Client</h3>
+                <p>Assistance 24/7 pour garantir la satisfaction de vos clients.</p>
+            </div>
+            <div class="card">
+                <h3>Consultation en Innovation</h3>
+                <p>Accédez à nos experts pour guider vos projets vers le succès.</p>
+            </div>
+        </div>
+        <a href="services.html" class="btn-secondary">Voir tous nos services</a>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-preview">
+        <h2>Qui sommes-nous ?</h2>
+        <p>Chez TechNova, nous sommes passionnés par l'innovation. Découvrez notre histoire, notre mission et nos valeurs.</p>
+        <a href="about.html" class="btn-secondary">Découvrir notre histoire</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 TechNova. Tous droits réservés. | <a href="contact.html">Contactez-nous</a></p>
+    </footer>
+
+    <!-- Bouton pour le Chatbot -->
+    <button id="help-button">Chatbot</button>
+
+    <script>
+        // Gestionnaire d'événement pour ouvrir le chatbot dans une nouvelle fenêtre
+        document.getElementById('help-button').addEventListener('click', function () {
+            window.open(
+                'https://cdn.botpress.cloud/webchat/v2.2/shareable.html?configUrl=https://files.bpcontent.cloud/2024/10/21/16/20241021163225-RUC62WDE.json',
+                '_blank',
+                'width=400,height=600'
+            );
+        });
+    </script>
+</body>
+</html>
